@@ -96,5 +96,5 @@
 #define CED_DISABLED             1
 #define GUEST_ALLOWED            1
 #define PLAYER_INTERTELL_ALLOWED 0
-
+#define __FLUFFOS__ FLUFFOS
 #endif /* s_config_h */
