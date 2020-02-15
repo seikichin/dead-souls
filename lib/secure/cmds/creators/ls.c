@@ -81,8 +81,8 @@ private mapping file_mapping(string *files) {
         x = sizeof(tmp = explode(files[i], "/"));
         if(x == 1) dir = "/";
         else dir = "/"+implode(tmp[0..x-2], "/")+"/";
-        if(borg[dir]) borg[dir] += get_dir(dir+tmp[x-1], -1);
-        else borg[dir] = get_dir(dir+tmp[x-1], -1);
+        if(borg[dir]) borg[dir] += get_dir(dir, -1);
+        else borg[dir] = get_dir(dir, -1);
     }
     return borg;
 }
